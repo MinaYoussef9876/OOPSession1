@@ -67,6 +67,49 @@
             // 3. Polymorphism
             // 4. Abstraction
             #endregion
+
+            #region V03 Encapsulation using setter and getter methods
+            // 1. Encapsulation
+            // Class or Struct
+            // Seperate the data (attributes) definition from its use
+            // [Setter Getter methods - Properties]
+
+            // Employee
+            // Id, Name, Salary
+
+            // 1. End user access data itself
+            // 2. No data validation
+            // 3. No readonly fields
+
+            // Apply Encapsulation
+            // 1. make all attributes private
+            // 2. Access data through: 
+            //      2.1 Setter Getter methods
+            //      2.2 Properites
+
+            //Employee e01 = new Employee();
+            //Employee e01 = new Employee(1, "Ahmed", 12000);
+            //Console.WriteLine(e01);
+
+            // Id is readonly attribute
+            //e01.GetId();
+
+            //e01._id = 1;
+            //e01._name = "Ahmed";
+            //e01._salary = 12000;
+
+            //Console.WriteLine(e01._id);
+            //Console.WriteLine(e01._name);
+            //Console.WriteLine(e01._salary);
+
+            //e01.SetId(1);
+            //e01.SetName("Ahmed");
+            //e01.SetSalary(12000);
+
+            //Console.WriteLine(e01.GetId());
+            //Console.WriteLine(e01.GetName());
+            //Console.WriteLine(e01.GetSalary());
+            #endregion
         }
     }
 }
