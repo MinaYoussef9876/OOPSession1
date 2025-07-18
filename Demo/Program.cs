@@ -52,6 +52,21 @@
             //Console.WriteLine(p03.ToString());
             //Console.WriteLine(p03);
             #endregion
+
+            #region V02 OOP overview
+            // OOP: Object Oriented Programming
+            // Programming paradigm
+            // OOP: Paradigm used for building any business
+
+            // Class: Blueprint of the object
+            // Object: Specific instance of the class
+
+            // 4 Pillars
+            // 1. Encapsulation
+            // 2. Inheritance
+            // 3. Polymorphism
+            // 4. Abstraction
+            #endregion
         }
     }
 }
