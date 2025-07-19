@@ -122,6 +122,39 @@
             //Console.WriteLine(employee.Name);
             //Console.WriteLine(employee.Salary);
             #endregion
+
+            #region V05 Indexer
+            // PhoneBook
+
+            //PhoneBook phoneBook = new PhoneBook(5);
+            //phoneBook.AddPerson("Ahmed", 11111, 0);
+            //phoneBook.AddPerson("Ali", 22222, 1);
+            //phoneBook.AddPerson("Omar", 33333, 2);
+
+            //Console.WriteLine(phoneBook.GetNumberByName("Ahmed"));
+
+            //phoneBook.UpdateNumber("Ahmed", 9999);
+
+            //Console.WriteLine(phoneBook.GetNumberByName("Ahmed"));
+
+            //Console.WriteLine(phoneBook["Ahmed"]);
+
+            //phoneBook["Ahmed"] = 8888;
+
+            //Console.WriteLine(phoneBook["Ahmed"]);
+
+
+            //Console.WriteLine(phoneBook[11111]);
+
+            //phoneBook[11111] = "AA";
+
+            //Console.WriteLine(phoneBook[11111]);
+
+
+
+
+
+            #endregion
         }
     }
 }
