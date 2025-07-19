@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 
 namespace Assignment
@@ -23,7 +24,7 @@ namespace Assignment
 
             //double distance = CalculateDistance(p01, p02);
             //Console.WriteLine($"Distance between the 2 points = {distance}");
-            
+
 
 
 
@@ -38,10 +39,9 @@ namespace Assignment
             //static double ReadPointCoordinate(char c)
             //{
             //    double coordinateValue;
-            //    bool flag;
+            //    bool flag = false;
             //    do
             //    {
-            //        flag = false;
             //        Console.Write($"Enter {c} of point:  ");
             //        flag = double.TryParse(Console.ReadLine(), out double value);
             //        coordinateValue = value;
@@ -58,8 +58,65 @@ namespace Assignment
             //}
             #endregion
 
+            #region Q02
+            //2.Create a struct called "Person" with properties "Name" and "Age".
+            //Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
 
+            Person[] people = new Person[3];
+
+            Console.WriteLine("Enter 3 Persons");
+
+            for(int i = 0; i < people.Length; i++)
+            {
+                Console.WriteLine($"Enter Person {i+1}: ");
+                people[i].Name = ReadName();
+                people[i].Age = ReadAge();
+            }
+
+            Console.WriteLine($"The Oldest Person is: {GetTheOldestPerson(people)}");
+
+            static string ReadName()
+            {
+                string name;
+                bool flag = false;
+                do
+                {
+                    Console.Write("Enter valid Name: ");
+                    name = Console.ReadLine();
+                    if (name.Length > 0)
+                        flag = true;
+                } while (!flag);
+                return name;
+            }
+
+            static int ReadAge()
+            {
+                int age;
+                bool flag = false;
+                do
+                {
+                    Console.Write("Enter valid Age: ");
+                    flag = int.TryParse(Console.ReadLine(), out int value);
+                    age = value;
+                } while (!flag);
+                return age;
+            }
+
+            static Person GetTheOldestPerson(Person[] people)
+            {
+                Person oldestPerson = people[0];
+
+                for(int i = 1; i < people.Length; i++)
+                {
+                    if (people[i].Age > oldestPerson.Age)
+                        oldestPerson = people[i];
+                }
+               return oldestPerson;
+            }
             #endregion
+
+
+        #endregion
         }
     }
 }
