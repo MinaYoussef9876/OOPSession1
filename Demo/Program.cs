@@ -155,6 +155,38 @@
 
 
             #endregion
+
+            #region V06 Class - Internal constructor chaining
+            // Class: Reference type - HEAP
+
+            // Car: Id, Model, Speed
+
+            //Car car;
+            // Declare of the reference (pointer) of type car
+            // can refer to object of type Car or any type inherited from car
+            // 8 bytes will be allocated at stack for the reference
+            // 0 bytes allocated at the heap
+
+            //car = new Car();
+            // Allocate the numbers of required bytes at heap for the object (16 bytes)
+            // initialize the allocated bytes with default values
+            // call user-defined constructor if exists
+            // assign the object to reference
+
+            //Console.WriteLine(car.Id);
+            //Console.WriteLine(car.Model);
+            //Console.WriteLine(car.Speed);
+
+
+            //Car car = new Car(1, "XYZ", 200);
+            //Console.WriteLine(car);
+
+            //Car car = new Car(1, "XYZ");
+            //Console.WriteLine(car);
+
+            //Car car = new Car(1);
+            //Console.WriteLine(car);
+            #endregion
         }
     }
 }
