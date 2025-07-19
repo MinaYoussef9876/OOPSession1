@@ -110,6 +110,18 @@
             //Console.WriteLine(e01.GetName());
             //Console.WriteLine(e01.GetSalary());
             #endregion
+
+            #region V04 Encapsulation using Properties
+
+            //Employee employee = new Employee();
+            //employee.Id = 12;
+            //employee.Name = "Ahmed";
+            //employee.Salary = 12000;
+
+            //Console.WriteLine(employee.Id);
+            //Console.WriteLine(employee.Name);
+            //Console.WriteLine(employee.Salary);
+            #endregion
         }
     }
 }

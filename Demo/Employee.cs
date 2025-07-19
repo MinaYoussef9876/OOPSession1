@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Demo
 {
@@ -11,6 +12,10 @@ namespace Demo
         private int _id;
         private string _name;
         private double _salary;
+
+
+        // Automatic Propery
+        public string Address { get; set; }
 
         // Apply Encapsulation using Setter Getter Methods
 
@@ -56,5 +61,66 @@ namespace Demo
         //{
         //    return $"ID: {_id}, Name: {_name}, Salary: {_salary}";
         //}
+
+
+
+
+
+        // Apply Encapsualtion using Properties  [Recommended]
+        // 1. Full Property
+
+        // Id
+        //public int Id
+        //{
+        //    // get
+        //    // set
+
+        //    get
+        //    {
+        //        return _id;
+        //    }
+        //    set
+        //    {
+        //        _id = value;
+        //    }
+        //}
+
+        //// Name
+        //public string Name
+        //{
+        //    get
+        //    {
+        //        return _name;
+        //    }
+        //    set
+        //    {
+        //        if (value.Length >= 0 && value.Length <= 25)
+        //            _name = value;
+        //    }
+        //}
+
+        //// Salary
+        //public double Salary
+        //{
+        //    get
+        //    {
+        //        return _salary;
+        //    }
+        //    set
+        //    {
+        //        if (value >= 0)
+        //            _salary = value;
+        //    }
+        //}
+
+
+
+
+        // 2. Automatic Property
+        // public string Address { get; set; }
+
+        // 3. Specail Property
+
+
     }
 }
